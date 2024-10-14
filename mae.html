@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweetie Bites</title>
+    <style>
+    body {
+        font-family: sans-serif;
+        margin: 20px;
+        background-image: url("Birthday Party Birthday Party Party Background Wallpaper Image For Free Download - Pngtree.jpg"); /* Replace with your image URL */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        text-align: center;
+    }
+    
+    form {
+        width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        box-sizing: border-box;
+    }
+    
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #45a049;
+    }
+    
+    h1, h2 {
+        text-align: center;
+    }
+    
+    .opening-hours, .location, .information {
+        margin-top: 1rem;
+        border-radius: 2px;
+        text-align: center;
+    }
+    
+    .cake-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cake-option {
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.cake-option img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.cake-option p {
+    font-size: 14px;
+}
+
+.select-cake-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1><i>Sweetie Bites</i></h1>
+    </header>
+    <main>
+        <p>Create your dream cake with our easy-to-use form. Tell us about your vision, and we'll bake it to perfection!</p>
+
+        <form action="#">
+            <label for="cakeFlavor">Cake Flavor:</label>
+            <div class="cake-options">
+                <div class="cake-option" data-value="Vanilla" data-image="Strawberry Vanilla Cake.jpg">
+                    <img src="Strawberry Vanilla Cake.jpg" alt="Vanilla Cake">
+                    <p>Vanilla Cake - $315</p>
+                    <button class="select-cake-button">Select</button>
+                </div>
+                <div class="cake-option" data-value="Chocolate" data-image="Chocolate Strawberry Cake.jpg">
+                    <img src="Chocolate Strawberry Cake.jpg" alt="Chocolate Cake">
+                    <p>Chocolate Cake - $345</p>
+                    <button class="select-cake-button">Select</button>
+                </div>
+                <div class="cake-option" data-value="Red Velvet" data-image="velvet dreams red cake for the special day velvet cake birthday cake dessert png.jpg">
+                    <img src="velvet dreams red cake for the special day velvet cake birthday cake dessert png.jpg" alt="Red Velvet Cake">
+                    <p>Red Velvet Cake - $432</p>
+                    <button class="select-cake-button">Select</button>
+                </div>
+            </div>
+            <input type="hidden" id="selectedCakeFlavor" value=""> 
+       
+
+            <label for="cakeSize">Cake Size:</label>
+            <select id="cakeSize" name="cakeSize">
+                <option value="Small">Small </option>
+                <option value="Medium">Medium </option>
+                <option value="Large">Large </option>
+            </select>
+
+               
+                <label for="design">Design:</label>
+                <select id="design">
+                  <option value="Buttercream Flowers">Buttercream Flowers</option>
+                  <option value="Fondant Animals">Fondant Animals</option>
+                  <option value="Simple Decor">Simple Decor</option>
+                </select>
+            
+
+            <label for="contact">Contact Information:</label>
+            <input type="text" id="contact" placeholder="Your name and Email">
+
+            <input type="submit" value="Place Order">
+        </form>
+
+        <div class="opening-hours">
+            <h2>Opening Hours</h2>
+            <p>We're open Monday to Saturday from 7:00 AM to 9:00 PM.</p>
+            <p>Closed on Sundays.</p>
+        </div>
+        <div class="location">
+            <h2>Location</h2>
+            <p> Linao Talisay , Beside of Mcdonalds</p> 
+        </div>
+         <div class="information">
+            <h2>Information</h2>
+            <p>Phone: 09355518839 </p>
+            <p>For any inquiries or special requests, please contact us at <a href="kylamaedorio47@gmail.com">kylamaedorio47@gmail.com</a>.</p>
+        </div>
+       
+        
+    </main>
+</body>
+</html>
